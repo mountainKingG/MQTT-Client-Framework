@@ -191,7 +191,9 @@
         return nil;
     }
     
-    NSData *pkcs12data = [[NSData alloc] initWithContentsOfFile:path];
+    NSURL *url = [[NSURL alloc] initWithString:path];
+    NSData *pkcs12data = [[NSData alloc] initWithContentsOfURL:url];
+    
     if (!pkcs12data) {
         DDLogWarn(@"[MQTTCFSocketTransport] reading p12 failed");
         return nil;
