@@ -18,6 +18,7 @@
 #import <MQTTClient/MQTTSession.h>
 #import <MQTTClient/MQTTDecoder.h>
 #import <MQTTClient/MQTTSessionLegacy.h>
+#import <MQTTClient/MQTTSessionSynchron.h>
 #import <MQTTClient/MQTTProperties.h>
 #import <MQTTClient/MQTTMessage.h>
 #import <MQTTClient/MQTTTransport.h>
